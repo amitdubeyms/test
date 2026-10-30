@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tasty Bites Restaurant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container header-content">
+      <h1 class="logo">Tasty Bites</h1>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <!-- <a href="#booking">Book a Table</a> -->
+       <button id="booktable">Book a Table</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <h2>Fresh Food, Happy Moments</h2>
+        <p>Enjoy delicious meals made with fresh ingredients.</p>
+        <a class="button" href="#menu">View Menu</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container about-content">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=80" alt="Restaurant food on a table">
+        <div>
+          <h2>About Us</h2>
+          <p>Tasty Bites is a friendly neighbourhood restaurant. We serve fresh and tasty food in a comfortable setting.</p>
+          <p>Visit us for lunch, dinner, family gatherings, and special occasions.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-section" id="menu">
+      <div class="container">
+        <h2>Popular Menu</h2>
+        <p class="section-text">Here are some of our customer favourites.</p>
+        <div class="menu-list">
+          <article class="menu-item">
+            <img src="https://images.unsplash.com/photo-1572449043416-55f4685c9bb7?auto=format&fit=crop&w=600&q=80" alt="Creamy pasta">
+            <h3>Garden Pasta</h3>
+            <p>Creamy pasta with vegetables and herbs.</p>
+            <strong>₹349</strong>
+          </article>
+          <article class="menu-item">
+            <img src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?auto=format&fit=crop&w=600&q=80" alt="Burger with fries">
+            <h3>House Burger</h3>
+            <p>Grilled burger with lettuce and house sauce.</p>
+            <strong>₹399</strong>
+          </article>
+          <article class="menu-item">
+            <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=600&q=80" alt="Fresh salad">
+            <h3>Fresh Salad</h3>
+            <p>Fresh vegetables with a light dressing.</p>
+            <strong>₹279</strong>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="booking">
+      <div class="container booking-content">
+        <div class="booking-text">
+          <h2>Book a Table</h2>
+          <p>Fill in your details to request a table.</p>
+          <p><strong>Important:</strong> This is a practice HTML form. It cannot send or confirm bookings without a backend.</p>
+        </div>
+        <form action="#booking" method="get">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" required>
+          <label for="date">Date</label>
+          <input type="date" id="date" name="date" required>
+          <label for="time">Time</label>
+          <input type="time" id="time" name="time" required>
+          <label for="guests">Guests</label>
+          <select id="guests" name="guests">
+            <option>1</option><option>2</option><option>3</option><option>4</option><option>5+</option>
+          </select>
+          <button type="submit">Submit Request</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <p><strong>Address:</strong> 123 Food Street, Your City, 400001</p>
+        <p><strong>Phone:</strong> <a href="tel:+919876543210">+91 98765 43210</a></p>
+        <p><strong>Email:</strong> <a href="mailto:hello@tastybites.example">hello@tastybites.example</a></p>
+        <p><strong>Opening Hours:</strong> Monday to Sunday, 12 PM to 11 PM</p>
+      </div>
+    </section>
+  </main>
+
+  <footer><p>&copy; 2026 Tasty Bites Restaurant</p></footer>
+
+  <!-- Replace this number with your WhatsApp number, including the country code. -->
+  <a class="whatsapp" href="https://wa.me/919876543210" target="_blank">WhatsApp</a>
+</body>
+</html>
